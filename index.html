@@ -129,7 +129,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel" class="carousel">
         <div class="item has-text-centered">
           <img src="static/images/briar-examples.png" alt="RGB examples" style="width: 60%; display: block; margin-left: auto; margin-right: auto;"/>
           <h2 class="subtitle has-text-centered">
@@ -146,8 +146,8 @@
     </div>
   </div>
 </section>
-</div>
-</section>
+<!-- </div>
+</section> -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -188,11 +188,15 @@
     </div>
   </div>
 </section>
+
+
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 has-text-centered">Evaluation</h2>
-      <div id="results-carousel" class="carousel results-carousel">
+      
+      <div id="evaluation-carousel" class="carousel">
         <div class="item has-text-centered">
           <img src="static/images/rank-retrieval.png" alt="Rank-Retrieval"/>
           <h2 class="subtitle has-text-centered">
@@ -212,6 +216,7 @@
           </h2>
         </div>
       </div>
+      
       <div class="content has-text-justified">
         <p>
           We evaluate our method using multiple metrics. Rank-Retrieval accuracy (Rank-1, Rank-5) measures how well an unseen probe sample matches an identity in a gallery. To address the issue that occlusion training can reduce performance on non-occluded (holistic) data, we introduce the Holistic Performance Retention (HPR) evaluation, which measures how much performance is retained on complete data after occlusion training. We also use the Relative Performance (RP) metric, which evaluates a model's accuracy on occluded data relative to the upper-bound performance on holistic data, providing a standardized measure of how effectively a method handles occlusions. 
@@ -360,5 +365,15 @@
   </div>
 </footer>
 
+<!-- <script>
+      bulmaCarousel.attach('.carousel', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        loop: true,              // Set to true to allow infinite scrolling
+        autoplay: true,          // Set to true to have the carousel auto-play
+        autoplaySpeed: 4000,     // Time in ms between slides
+      });
+    </script> -->
+    
 </body>
   </html>
